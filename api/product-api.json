@@ -1,0 +1,32 @@
+{
+    "products": [
+        {
+            "id": 0,
+            "name": "Acme",
+            "quantity": 5,
+            "unit_coast": 34,
+            "measure": "1"
+        },
+        {
+            "id": 1,
+            "name": "Mode",
+            "quantity": 7,
+            "unit_coast": 234,
+            "measure": "0"
+        },
+        {
+            "id": 2,
+            "name": "Bone",
+            "quantity": 21,
+            "unit_coast": 43,
+            "measure": "2"
+        },
+        {
+            "id": 3,
+            "name": "Pivo",
+            "quantity": 234,
+            "unit_coast": 231,
+            "measure": "3"
+        }
+    ]
+}
