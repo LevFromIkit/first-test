@@ -1,0 +1,28 @@
+<mat-card appearance="outlined">
+  <mat-card-content>
+    <h2 class="section-heading">Create Product</h2>
+    <form [formGroup]="applyForm" (ngSubmit)="createProduct()" class="create-form">
+      <mat-form-field>
+        <mat-label for="name">Name</mat-label>
+        <input matInput id="name" type="text" formControlName="name">
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label for="quantity">Quantity</mat-label>
+        <input matInput id="quantity" type="number" formControlName="quantity">
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label for="unitCost">Unit Cost</mat-label>
+        <input matInput id="unitCost" type="number" formControlName="unitCost">
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label for="measure">Measure id</mat-label>
+        <input matInput id="measure" type="number" formControlName="measure">
+      </mat-form-field>
+
+      <button mat-flat-button type="submit" class="primary">Create now</button>
+    </form>
+  </mat-card-content>
+</mat-card>

@@ -1,0 +1,24 @@
+<article>
+    
+    <section class="listing-features">
+        <mat-card appearance="outlined">
+            <mat-card-content>
+                
+                <label for="name">Name: {{measureInterface?.name}}</label>
+                <button mat-flat-button (click)="deleteMeasure()" type="submit" class="primary">Delete product</button>
+            </mat-card-content>
+        </mat-card>
+    </section>
+
+    <mat-card appearance="outlined">
+        <mat-card-content>
+            <h2 class="section-heading">Update information</h2>
+            <form (submit)="submitApplicationMeasure()">
+                <label for="name">Name </label>
+                <input id="name" type="text" formControlName="name">
+
+                <button mat-flat-button type="submit" class="primary">Update now</button>
+            </form>
+        </mat-card-content>
+    </mat-card>
+</article>

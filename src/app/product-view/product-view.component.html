@@ -1,0 +1,44 @@
+<section>
+  <mat-card appearance="outlined">
+    <mat-card-content>
+      <mat-card-title> Products from API</mat-card-title>
+      <mat-card appearance="outlined">
+        <mat-card-content>
+            <table mat-table [dataSource]="productInterface" class="demo-table">
+                <ng-container matColumnDef="id">
+                  <th mat-header-cell *matHeaderCellDef> id </th>
+                  <td mat-cell *matCellDef="let element" (click)="onRowClick(element)"> {{element.id}} </td>
+                </ng-container>
+              
+                <ng-container matColumnDef="name">
+                  <th mat-header-cell *matHeaderCellDef> Name </th>
+                  <td mat-cell *matCellDef="let element" (click)="onRowClick(element)"> {{element.name}} </td>
+                </ng-container>
+              
+                <ng-container matColumnDef="quantity">
+                  <th mat-header-cell *matHeaderCellDef> Quantity </th>
+                  <td mat-cell *matCellDef="let element" (click)="onRowClick(element)"> {{element.quantity}} </td>
+                </ng-container>
+              
+                <ng-container matColumnDef="unit_coast">
+                  <th mat-header-cell *matHeaderCellDef> Unit Coast </th>
+                  <td mat-cell *matCellDef="let element" (click)="onRowClick(element)"> {{element.unit_coast}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="measure">
+                    <th mat-header-cell *matHeaderCellDef> Measure </th>
+                    <td mat-cell *matCellDef="let element" (click)="onRowClick(element)"> {{element.measure}} </td>
+                </ng-container>
+              
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr
+                    mat-row
+                    (click)="onRowClick(row)"
+                    *matRowDef="let row; columns: displayedColumns;"
+                ></tr>
+            </table>
+          </mat-card-content>
+        </mat-card>
+      </mat-card-content>
+    </mat-card>
+</section>

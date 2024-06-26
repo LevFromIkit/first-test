@@ -1,0 +1,14 @@
+<mat-card appearance="outlined">
+    <mat-card-content>
+      <h2 class="section-heading">Create Product</h2>
+      <form [formGroup]="applyForm" (ngSubmit)="createProduct()" class="create-form">
+        <mat-form-field>
+          <mat-label for="name">Name</mat-label>
+          <input matInput id="name" type="text" formControlName="name">
+        </mat-form-field>
+  
+        <button mat-flat-button type="submit" class="primary">Create now</button>
+      </form>
+    </mat-card-content>
+  </mat-card>
+  

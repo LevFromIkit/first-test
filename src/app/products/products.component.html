@@ -1,0 +1,18 @@
+<section>
+  <mat-card appearance="outlined">
+    <mat-card-content>
+          <button mat-stroked-button onclick="document.location='add-product'">Add product</button>
+          <button mat-stroked-button onclick="document.location='add-measure'">Add measure</button>
+    </mat-card-content>
+  </mat-card>
+</section>
+
+<div class="delay"></div>
+
+<section class="results">
+
+  <app-measure-view [measureInterface]="measureList"></app-measure-view>
+  <div class="delay"></div>
+  <app-product-view [productInterface]="totalProductList"></app-product-view>
+
+</section>
